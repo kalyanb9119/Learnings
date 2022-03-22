@@ -14,11 +14,21 @@ public class SumOfNaturalN {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the number upto which you want calculate ?");
 		int n=sc.nextInt();
-		int sum=0;
-		for(int i=1;i<=n;i++) {
-		          sum=sum+i;
-		}
+		int sum = sumOfNauturalNumbers(n);
 		System.out.println("Total="+sum);
+	}
+	
+	// creating a function to return the sum of first n natural numbers.
+	public static int sumOfNauturalNumbers(int n) {
+		int sum=0;
+		
+		// computing the sum of first n natural numbers
+		for(int i=1;i<=n;i++) {
+			sum=sum+i;
+		}
+		
+		// returning the sum
+		return sum;
 	}
 
 }
